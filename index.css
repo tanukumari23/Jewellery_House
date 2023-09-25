@@ -1,0 +1,156 @@
+.sub-menu {
+  display: none;
+}
+.sub-menu {
+  display: none;
+}
+
+.main-menu:hover .sub-menu {
+  display: block;
+  background-color: blue;
+}
+.main-menu:hover {
+  border-bottom: 4px;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+}
+
+/* .navbar {
+  z-index: 3;
+} */
+/* #mycarousel {
+  position: relative;
+  width: 100%;
+  top: 0;
+} */
+
+
+.Account > ul{
+  display: none;
+  list-style-type: none;
+}
+.Account:hover .login{
+display: block;
+
+}
+.card-body a{
+  text-decoration: none;
+  color: green;
+  font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+
+.card-body a:hover{
+  color: red;
+  text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.card-body button{
+  background-color: red;
+}
+.card-body button:hover{
+  background-color: green;
+}
+.footer a:hover{
+  color: white;
+  font-size: 20px;
+  
+}
+.Download a:hover{
+  color: red;
+}
+.card:hover{
+  box-shadow: 10px  5px 20px 1px  black;
+}
+.card{
+ box-shadow: 5px 2px 10px 1px rgb(93, 91, 91);
+}
+.card button:hover{
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.navbar-nav a:hover{
+color: white;
+font-size: large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+.dropdown-menu a:hover{
+  color: green ;
+  
+}
+.modal-body{
+  /* background-image: linear-gradient(to right, red, green); */
+  background-color: rgb(199, 62, 62);
+}
+.modal-header, .modal-footer{
+  background-image: linear-gradient(to left, rgb(59, 173, 59), rgb(59, 173, 59));
+  /* background-color: red; */
+  
+
+}
+
+.modal button:hover{
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.offcanvas-header{
+  /* background-image: linear-gradient(to left, green, yellow); */
+background-color: rgb(199, 62, 62);
+
+}
+.offcanvas-body{
+  /* background-image: linear-gradient(to left, green, yellow); */
+background-color: rgb(59, 173, 59);
+font-size: 30px;
+
+}
+.navbar{
+
+  /* background-image: linear-gradient(to right, red, rgb(3, 252, 3)); */
+  background-color: red;
+
+}
+/* .offcanvas-body, .offacnvas-body li{
+  background-image: linear-gradient(to top, red, yellow);
+
+} */
+
+.offcanvas-body ul li a{
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 19px; 
+  font-weight: 500;
+
+}
+.card-title{
+  font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+.offacnvas-body li a:hover{
+background-color: blue;}
+.modal{
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 20px;
+}
+.offcanvas-body ul li a:active{
+  background-color: red;
+}
+.login .dropdown-item:active{
+  background-color: white;
+
+}
+.addtocart a:hover{
+text-decoration: none;
+}
+
+.addtocart a{
+  text-decoration: none;
+  color: green;
+  font-size: 20px;
+  font-weight: 700;
+  }
+ 

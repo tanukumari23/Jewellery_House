@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+    <div class="container-xxl my-0 p-0">
+        <img
+          src="https://th.bing.com/th/id/R.9481d229f6743b7cc6c4fb3d13f8caac?rik=R35ei08mvxI13Q&riu=http%3a%2f%2fggscorporation.com%2fwp-content%2fuploads%2f2015%2f01%2fwelcome-to-our-new-website-529x269.jpg&ehk=dS8v0mU41QS0nvFUjm9BKX4hplw0lakb54McNTKjDmk%3d&risl=&pid=ImgRaw&r=0"
+          alt=""
+          style="width: 100%; height: 200px"
+        />
+      </div>
+
+<div class="container-xxl" style="position: sticky; top: 0px;">
+
+    <div class="container-xxl p-0" >
+        <!-- <div class="row"> -->
+        <div class="row">
+          <div
+            class="col-md-12 bg-danger border border-0 border-success justify-content-center px-3"
+          >
+            <nav class="navbar navbar-expand-sm navbar-dark navigation">
+              <div class="navbar-brand px-3" style="line-height: 1px">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="d-block"
+                    src="images/tanishq.svg"
+                    alt=""
+                    width="75px"
+                /></a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="navbarOffcanvasLg"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <form
+                class="d-flex navbar-collapse"
+                role="search"
+                style="display: inline; "
+              >
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                style="display: inline; width: 100%"
+  
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+  
+              <!-- <form class="d-flex navbar-collapse">
+                  <input
+                    type="search"
+                    placeholder="Search for products, brands and more"
+                    aria-label="search"
+                    class="form-control border-white rounded-0"
+                    aria-describedby="search-addon"
+                  />
+  
+                  <button
+                    type="button"
+                    class="btn btn-primary border border-1 border-white bg-white fw-bold rounded-0"
+                  >
+                    <i class="fas fa-search text-primary fw-bold fs-5"></i>
+                  </button>
+                </form> -->
+              <div class="nav">
+                <ul class="nav" >
+                  <li class="nav-item mx-4 fw-bold">
+                    <a href="#" style="display: inline">
+                      <img src="images/download.svg" alt="" style="width: 30px" />
+                    </a>
+                  </li>
+                  <li class="nav-item mx-4 fw-bold">
+                    <a href="#" style="display: inline">
+                      <img src="images/download.svg" alt="" style="width: 30px" />
+                    </a>
+                  </li>
+  
+                  <li class="nav-item mx-4 fw-bold">
+                    <a href="#" style="display: inline">
+                      <img src="images/download.svg" alt="" style="width: 30px" />
+                    </a>
+                  </li>
+  
+                  <li class="nav-item mx-4 fw-bold">
+                    <a href="#" style="display: inline">
+                      <img src="images/download.svg" alt="" style="width: 30px" />
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item ms-md-2 fw-bold">
+                      <a class="nav-link text-white" href="#"
+                        ><i class="fa-solid fa-cart-shopping pe-2"></i>Cart</a
+                      >
+                    </li> -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+
+
+
+
+      <nav
+      class="navbar navbar-expand-lg justify-content-center bg-body-tertiary bg-info"
+    >
+      <div class="container-fluid">
+        <!-- <a href="#" class="navbar-brand">
+        <img
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+"
+          alt=""
+          style="height: 50px"
+        />
+      </a> -->
+        
+        <!-- <button
+          class="navbar-toggler p-3 text-primary bg-warning"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#Collapsible"
+          aria-controls="navbarOffcanvasLg"
+          aria-label="Toggle navigation"
+        >
+          <span class="navabr-toggler-icon"></span>
+
+        </button> -->
+        <!-- <button
+    class="navbar-toggler px-5 text-primary bg-danger"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#Collapsible"
+  >
+    <span class="navabr-toggler-icon"></span>
+  </button>
+   <a href="#" class="navbar-brand">
+      <img
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+"
+        alt=""
+        style="height: 50px"
+      />
+    </a>  -->
+        <!-- <form action="" class="d-flex ">
+      <input type="text" class="form-control px-5 mx-2 w-xxl-100" placeholder="Serach">
+      <button class="btn btn-primary" type="button">send</button>
+    </form> -->
+
+        <div
+          class="offcanvas offcanvas-start"
+          id="offcanvasNavbar"
+          tabindex="-1"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3 main-menu">
+                <a
+                  href="#"
+                  class="nav-link dropdown toggle"
+                  data-bs-toggle="dropdown"
+                  >Hello</a
+                >
+                <ul
+                  class="dropdown-menu sub-menu"
+                  style="background-color: palevioletred"
+                >
+                  <li>
+                    <a href="" # class="dropdown-item">ALL JEWELLERY</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">PENDANTS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">EARRINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">FINGER RINGS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">MANGALSUTRA</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">CHAINS</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">NECLACES</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-item">BANGLES</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item dropdown mx-3">
+              <a
+                href="#"
+                class="nav-link dropdown toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Hello</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" # class="dropdown-item">LINK</a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item">LINK</a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item">LINK</a>
+                </li>
+              </ul>
+            </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+</div>
+
+
+    <div class="container-xxl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde provident ab tempore, sint perferendis, earum sequi fugiat saepe accusantium iste non nemo voluptates optio quidem inventore eveniet consequuntur iure officiis nihil necessitatibus corrupti tenetur odit! Dignissimos eaque aliquam voluptatibus! Omnis incidunt dolores molestias velit odio reprehenderit repellat consectetur quos ea nostrum, nemo minus inventore quis, neque animi tempore eos vitae laborum quia repellendus modi maiores similique, provident natus. Recusandae repellendus excepturi quos, tempore, in rerum ut quibusdam, harum reprehenderit adipisci vel necessitatibus unde? Harum corporis vitae est in perferendis perspiciatis fugit ad? Mollitia doloribus doloremque fuga tempora exercitationem quaerat rem omnis similique earum, esse ea necessitatibus non quod iure. Nobis quia accusamus, minus quaerat incidunt officiis ut architecto temporibus itaque nostrum totam amet, beatae esse! Aliquam, temporibus culpa, obcaecati dicta vero vel voluptas magnam iste labore corporis fugiat necessitatibus debitis eveniet ducimus eaque amet, possimus ea ab dolor maiores! Maiores delectus provident ab sed atque ipsam? Vel facere aspernatur perferendis excepturi vitae, fugit sed accusamus sit doloremque quidem natus reiciendis nihil, aut quo iure, quasi eos. Obcaecati rerum eius quo quaerat repudiandae vel ipsum officia voluptatem repellat ea soluta, amet labore cupiditate, consectetur dolore expedita nobis. Laboriosam consectetur accusamus dolorum, quo cum tenetur assumenda, sapiente aperiam beatae, hic consequatur? Aliquid quo, similique culpa beatae aut esse iusto sint nostrum cupiditate, temporibus consequuntur exercitationem quasi odit, adipisci explicabo minima? Quod illo iusto perspiciatis delectus harum nostrum placeat voluptas tempora et quis, ea suscipit ex eum repudiandae aliquid assumenda recusandae! Magni excepturi voluptatum at nemo, doloremque fuga ipsa exercitationem magnam sit corrupti dolorem! Exercitationem dolorum ipsam numquam optio! Doloribus iure quas quaerat, ea, debitis provident pariatur blanditiis commodi corporis, iste et nam dolore repellat cum! Ratione ex alias quam id ullam cumque consequuntur explicabo omnis eos natus soluta exercitationem corrupti aliquid ipsam magnam, cum, consectetur praesentium incidunt veniam sunt, numquam illo similique. Repellat laboriosam, hic quibusdam et sed aut facere! Placeat mollitia sed, est possimus tempora esse tempore ducimus corporis nostrum incidunt aliquid iste ipsa! Officiis incidunt modi ducimus explicabo tenetur quisquam dicta culpa, magnam ullam? Maxime deserunt temporibus, nesciunt culpa expedita porro ex laudantium at fuga numquam iusto amet asperiores consectetur sint esse earum blanditiis totam adipisci architecto. Alias expedita nostrum dolor! Ut corrupti nihil animi modi explicabo est fugiat. Totam necessitatibus facilis aliquam maiores tempore dolores provident rerum molestiae error quidem earum a sit at nihil labore corporis dignissimos ducimus, excepturi quos! Ea fugit blanditiis illo nostrum. Similique voluptatem placeat dolor rerum, fugit commodi quam minima expedita perspiciatis explicabo sed unde numquam soluta necessitatibus dolorum enim nemo exercitationem ad? Rem adipisci doloribus nostrum beatae animi quis, fuga veritatis! Illo laborum dolorem fuga delectus sit odit! Culpa nisi corrupti voluptatum excepturi minima velit harum blanditiis repudiandae animi ullam iure libero, aperiam, dignissimos molestias molestiae reprehenderit magnam, alias illum consequatur exercitationem dolorum accusantium. Necessitatibus laudantium recusandae quia earum officia. Nobis libero eveniet necessitatibus debitis autem, soluta maxime dolorum placeat aspernatur molestias architecto voluptate eaque quod suscipit aliquid maiores commodi obcaecati? Harum ullam exercitationem recusandae, laboriosam impedit voluptatibus distinctio sunt ad similique ipsa accusantium quos ex facere ea explicabo? Tempore, vero eaque, dignissimos nemo nostrum inventore ex, rem atque molestiae porro voluptas sit? Aspernatur sed temporibus repudiandae similique ex sapiente eaque quae optio. Veniam quisquam maxime deleniti impedit vero sunt explicabo, rerum modi mollitia officiis esse placeat quasi veritatis necessitatibus nam aliquid unde non, corporis sit deserunt quia. Cum quos dolor nesciunt. Labore provident deserunt quaerat soluta, iste dolorem libero commodi architecto ducimus quae debitis, recusandae laboriosam illum vero explicabo omnis sed aspernatur odit corporis molestias error ad. Labore dolor numquam vitae quis, eligendi debitis magni blanditiis cumque facilis sed, corporis quas, repellendus modi. Explicabo, nisi quas, vero doloribus non corrupti repudiandae ipsa ea quisquam magnam, tenetur optio ut temporibus provident dolore cumque dolores laudantium rem quo praesentium. Neque quis incidunt doloribus. Nobis aspernatur ipsum, fugiat optio illo sunt laboriosam similique provident ullam architecto sapiente, dignissimos consequatur voluptatibus, enim nemo? Ea, nemo. Dolores at in impedit laboriosam id repellendus, rem asperiores repellat soluta optio dolore nostrum velit ab fuga deserunt totam dignissimos vero deleniti ullam maiores explicabo dolor neque perspiciatis! Repellendus debitis assumenda ad voluptatem omnis quisquam aperiam velit quae quidem qui iste sit pariatur mollitia quibusdam et, consectetur quaerat beatae minus nam fugit magni. Eligendi, error. Exercitationem saepe minus similique laborum? Atque, quos cupiditate. Harum reprehenderit quidem perferendis necessitatibus, quas ut natus magni sit adipisci nemo vel laudantium atque dicta cumque maxime, dolorem repellat enim provident at rem consequatur. Soluta nostrum officia nihil esse numquam delectus ipsa magni, voluptates maiores amet blanditiis ullam illum omnis similique molestiae quas quae, vero necessitatibus enim saepe iure in temporibus? Natus consequuntur sunt provident quibusdam possimus optio numquam exercitationem reiciendis magnam maiores, fugiat quae totam tempore veniam amet dolor. Reprehenderit, voluptatem ad beatae corrupti, ratione ipsa odio libero corporis sunt quibusdam iste excepturi qui repellendus. Rerum quo, nobis provident nulla et veritatis sit hic officiis saepe natus dolorem eum nostrum magnam sequi aut vel expedita, tenetur similique! Eveniet quod quam vel! Eveniet delectus, inventore error sint minus ducimus velit autem fuga deserunt veniam est, consectetur quo sunt repellendus blanditiis, consequuntur harum architecto soluta veritatis esse tempora numquam voluptatem necessitatibus. Reprehenderit ratione saepe provident in dolores explicabo expedita illum, voluptatibus voluptate accusantium porro, laudantium earum. Rem deleniti reiciendis beatae, fugiat modi, labore eius id facere aspernatur ipsum laboriosam exercitationem soluta facilis error sequi, accusantium placeat minima perferendis rerum delectus culpa. Vero nostrum, voluptates sed mollitia corrupti officiis repudiandae ratione adipisci aliquam labore sequi cumque impedit delectus recusandae beatae eveniet quis amet voluptatibus temporibus qui error nemo! Possimus aperiam, pariatur similique laudantium veritatis placeat reprehenderit rem suscipit! Cupiditate magni adipisci voluptatibus obcaecati ipsam quo natus labore commodi rerum porro architecto molestiae, at, optio cum voluptatum assumenda quaerat, aut perferendis voluptatem laboriosam omnis accusantium sed! Ratione repellendus blanditiis minima ipsa sapiente a nemo laboriosam, magnam quod et optio, similique incidunt harum rem deserunt officia possimus tenetur non saepe? Hic unde officia magnam velit laudantium quae dolorum voluptas voluptatibus?
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
